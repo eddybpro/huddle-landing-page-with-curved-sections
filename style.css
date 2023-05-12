@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----- HEADER --- */
+
+header{
+    width: 100%;
+    overflow-x: hidden;
+    padding: 2rem 1.5rem 6rem;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.logo{
+    width: 15rem;
+}
+
+.try-btn{
+    background-color: transparent;
+    border: 1px solid var(--Pink);
+    outline: none;
+    cursor: pointer;
+    padding: .5rem 1.5rem;
+    text-transform: capitalize;
+    color: var(--Pink);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    transition: all .2s ease-in-out;
+}
+
+.try-btn:hover{
+    color: var(--Light-Pink);
+    border-color: var(--Light-Pink);
+}
+
+.header-title{
+    font-size: 2.7rem;
+    color: var(--Very-Dark-Cyan);
+}
+
+.header-para{
+    color: var(--Very-Dark-Cyan);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: 2rem 0 4rem;
+}
+
+.get-started-btn{
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Blue);
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 2rem 0 6rem;
+    box-shadow: .2px .2px 4px .2px var(--Very-Dark-Cyan);
+    transition: background-color .2s ease-in-out;
+}
+
+.get-started-btn:hover{
+    background-color: var(--Light-Pink);
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+}
+
+/*  --------- MAIN ---------- */
+
+main{
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.stats-container{
+    padding: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.stats-card{
+    margin: 3rem 0;
+    text-align: left;
+}
+
+.stats-img{
+    width: 3rem;
+}
+
+.stats-title{
+    color: var(--Very-Dark-Cyan);
+    font-size: 4rem;
+}
+
+.stats-para{
+    font-size: 1.6rem;
+    color: var(--);
+}
+
+.main-container{
+    padding: 15rem 1.5rem;
+}
+
+.main-img-box{
+    margin: 5rem 0;
+}
+
+.main-img-box > img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-title{
+    font-size: 2rem;
+    color: var(--Very-Dark-Cyan);
+    margin: 2rem 0;
+}
+
+.main-para{
+    font-size: 1.6rem;
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 2rem;
+}
+
+.grow-together{
+    background: url('./images/bg-section-top-mobile-1.svg'),
+    linear-gradient(var(--Very-Pale-Blue), var(--Very-Pale-Blue)),
+    url('./images/bg-section-bottom-mobile-1.svg');
+    background-position: top, center, bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 20%, 100% 60%, 100% 20%;
+}
+
+.your-users{
+    background: url('./images/bg-section-top-mobile-2.svg'),
+    linear-gradient(var(--Very-Pale-Blue), var(--Very-Pale-Blue)),
+    url('./images/bg-section-bottom-mobile-2.svg');
+    background-position: top, center, bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 20%, 100% 60%, 100% 20%;
+}
+
+.community-section{
+    margin: 3rem 0;
+    padding: 1.5rem;
+}
+
+.community-title{
+    font-size: 2.2rem;
+    color: var(--Very-Dark-Cyan);
+    margin: 2rem 0;
+}
+/* ------ FOOTER ------ */
+
+footer{
+    padding: 6rem 1.5rem;
+    background: url('./images/bg-footer-top-mobile.svg'),
+    linear-gradient(hsl(192, 100%, 9%), hsl(192, 100%, 9%));
+    background-position: top, bottom;
+    background-size: 100% 10% , 100% 92%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.newsletter-card{
+    margin-bottom: 5rem;
+}
+
+.newsletter-title{
+    color: var(--Very-Pale-Blue);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.newsletter-para{
+    font-size: 1.6rem;
+    color: var(--Very-Pale-Blue);
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+}
+
+.contact-section{
+    margin: 1rem 0 3rem;
+}
+
+.email{
+    width: 100%;
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    color: var(--Very-Dark-Cyan);
+    margin: 1rem 0;
+}
+
+.subscribe-btn{
+    float: right;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    color: var(--Very-Pale-Blue);
+    background-color: var(--Pink);
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.subscribe-btn:hover{
+    background-color: var(--Light-Pink);
+}
+
+.error{
+    color: var(--Light-Red);
+    font-size: 1.4rem;
+    margin-left:2rem ;
+}
+
+.address-card{
+    margin: 6rem 0 4rem;
+}
+
+.footer-logo{
+    width: 15rem;
+    margin: 3rem 0 2rem;
+}
+
+.address-para{
+    font-size: 1.6rem;
+    color: var(--Very-Pale-Blue);
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.address-box{
+    display: grid;
+    grid-template-columns: 2rem auto;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.address-icon{
+    margin-top: .5rem;
+}
+
+.phone{
+    color: var(--Very-Pale-Blue);
+    font-size: 1.6rem;
+}
+
+.social-icons{
+    width: 14rem;
+    display: grid;
+    grid-template-columns: 4rem 4rem 4rem;
+    place-items: center;
+    gap: 1rem;
+    list-style: none;
+    margin:2rem auto;
+}
+
+.icon i{
+    color: var(--Very-Pale-Blue);
+    font-size: 3rem;
+}
+
+.icon:hover i{
+    color: hsl(192, 96%, 48%);
+}
+
+.attribution{
+    color: var(--Very-Pale-Blue);
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.attribution a{
+    color: var(--Pink);
+    text-decoration: none;
+}
+
+.none{
+    display: none;
+}
+/* ----------- MEDIA QUERY ------------- */
+
+@media screen and (min-width:768px) {
+    /*  --------HEADER --------- */
+    header{
+        padding: 2rem 6rem 6rem;
+    }
+    
+    .header-para span{
+        display: block;
+    }
+
+    .hero{
+        width: 60rem;
+    }
+
+    .stats-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 3rem;
+        margin: auto;
+        padding: 1.5rem 6rem;
+    }
+
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: dense;
+        gap: 3rem;
+        place-items: center;
+        text-align: left;
+        padding: 15rem 6rem;
+    }
+
+    .grow-together .main-txt-container,
+    .your-users .main-txt-container{
+        grid-column: 1;
+    }
+
+    .grow-together .main-img-box,
+    .your-users .main-img-box{
+        grid-column: 2;
+    }
+
+    .grow-together{
+        background: url('./images/bg-section-top-desktop-1.svg'),
+        linear-gradient(var(--Very-Pale-Blue), var(--Very-Pale-Blue)),
+        url('./images/bg-section-bottom-desktop-1.svg');
+        background-position: top, center, bottom;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 100% 20%, 100% 60%, 100% 20%;
+    }
+
+    .your-users{
+        background: url('./images/bg-section-top-desktop-2.svg'),
+        linear-gradient(var(--Very-Pale-Blue), var(--Very-Pale-Blue)),
+        url('./images/bg-section-bottom-desktop-2.svg');
+        background-position: top, center, bottom;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 100% 20%, 100% 60%, 100% 20%;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        grid-auto-flow: dense;
+        padding: 6rem;
+        background: url('./images/bg-footer-top-desktop.svg'),
+        linear-gradient(hsl(192, 100%, 9%), hsl(192, 100%, 9%));
+        background-position: top, bottom;
+        background-size: 100% 25% , 100% 76%;
+        background-repeat: no-repeat, no-repeat;
+    }
+
+    .newsletter-card{
+        grid-column: 2;
+        margin: 6rem 0 4rem;
+    }
+
+    .address-card{
+        grid-column: 1;
+    }
+
+    .contact-section{
+        display: grid;
+        grid-template-columns: 1fr 15rem;
+        gap: 2rem;
+    }
+
+    .newsletter-para span{
+        display: block;
+    }
+
+    .email, .subscribe-btn{
+        padding: 1.5rem .5rem;
+        margin: 0;
+    }
+
+    .address-para span{
+        display: block;
+    }
+
+    .social-icons{
+        margin: 2rem 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
